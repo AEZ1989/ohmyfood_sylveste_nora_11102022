@@ -320,7 +320,7 @@ ul {
   height: 190px;
 }
 .heartMenu {
-  padding-top: 50px;
+  padding: 50px 5px  0px 0px ;
   font-size: 25px;
 }
 .main{
@@ -336,7 +336,7 @@ ul {
   margin: 0;
   display:flex;
   justify-content: space-between;
-  padding: 0 15px;
+ 
   &__para{
     font-family:Shrikhand;
     font-weight: bolder;
@@ -354,7 +354,7 @@ ul {
 }
 .border{
   margin: 0;
-  padding: 3px 335px 3px 0px;
+  padding: 3px 330px 3px 0px;
   padding-bottom: 15px;
   padding-left: 10px;
   &__line{
@@ -369,7 +369,7 @@ ul {
   background-color:white;
   display: flex;
   justify-content: space-between;
-  padding: 10px 35px 10px 15px;
+  padding: 10px 15px 10px 15px;
   @include btn-shadow;
   @include radiusBtn;
   &__text{
