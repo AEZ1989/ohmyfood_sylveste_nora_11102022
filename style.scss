@@ -263,7 +263,12 @@ body>* {
     margin: 0;
   }
 }
-
+i.fa-solid.fa-utensils {
+  padding-right:10px;
+}
+i.fa-solid.fa-handshake-angle {
+  padding-right: 5px;
+}
 ul {
 
   line-height: 1.5;
@@ -303,7 +308,7 @@ ul {
 
   &__img {
     width: 30%;
-    padding-left: 135px;
+    padding-left: 100px;
 
   }
 }
@@ -316,6 +321,14 @@ ul {
 }
 .fa-regular{
   padding-top: 30px;
+}
+.main{
+  border-radius: 80px 80px 0px 0px ;
+  background-color:$bckcolor;
+  position:relative;
+  top:-45px;
+  
+  
 }
 .titleMenu{
   margin: 0;
