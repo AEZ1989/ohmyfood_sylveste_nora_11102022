@@ -241,7 +241,7 @@ ul {
 }
 
 .heartMenu {
-  padding-top: 50px;
+  padding: 50px 5px 0px 0px;
   font-size: 25px;
 }
 
@@ -257,7 +257,6 @@ ul {
   margin: 0;
   display: flex;
   justify-content: space-between;
-  padding: 0 15px;
 }
 .titleMenu__para {
   font-family: Shrikhand;
@@ -274,7 +273,7 @@ ul {
 
 .border {
   margin: 0;
-  padding: 3px 335px 3px 0px;
+  padding: 3px 330px 3px 0px;
   padding-bottom: 15px;
   padding-left: 10px;
 }
@@ -288,7 +287,7 @@ ul {
   background-color: white;
   display: flex;
   justify-content: space-between;
-  padding: 10px 35px 10px 15px;
+  padding: 10px 15px 10px 15px;
   box-shadow: 3px 3px 3px 3px rgba(238, 238, 238, 0.968627451);
   border-radius: 20px 20px 20px 20px;
 }
