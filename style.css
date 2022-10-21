@@ -61,8 +61,8 @@ body > * {
   box-shadow: 3px 3px 3px 3px rgba(238, 238, 238, 0.968627451);
   text-align: center;
   margin: 0;
-  background: linear-gradient(to bottom, #e47feb, #b33bc7);
-  padding: 15px 0px 15px;
+  background: linear-gradient(to bottom, #de92d9, #a83b8d);
+  padding: 17px 0px 17px;
   font-size: 14px;
   color: white;
   border-radius: 25px;
@@ -121,6 +121,7 @@ body > * {
 }
 .btn__text:hover {
   background-color: #f6dff8;
+  box-shadow: 8px 8px 8px 8px rgba(238, 238, 238, 0.968627451);
 }
 
 .section {
@@ -165,7 +166,7 @@ body > * {
 .nouveau__green {
   background-color: #99E2D0;
   margin: 0;
-  padding: 5px 14px;
+  padding: 5px 5px;
   font-size: 12px;
 }
 
@@ -216,6 +217,11 @@ ul {
   list-style: none;
   padding-left: 20px;
   padding-bottom: 20px;
+}
+
+.contact {
+  color: white;
+  margin: 0;
 }
 
 /*PAGE 1 */
@@ -287,7 +293,7 @@ ul {
   background-color: white;
   display: flex;
   justify-content: space-between;
-  padding: 10px 15px 10px 15px;
+  padding: 10px 10px 10px 10px;
   box-shadow: 3px 3px 3px 3px rgba(238, 238, 238, 0.968627451);
   border-radius: 20px 20px 20px 20px;
 }
