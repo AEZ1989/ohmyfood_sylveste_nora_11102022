@@ -319,15 +319,17 @@ ul {
   width: 100%;
   height: 190px;
 }
-.fa-regular{
-  padding-top: 30px;
+.heartMenu {
+  padding-top: 50px;
+  font-size: 25px;
 }
 .main{
-  border-radius: 80px 80px 0px 0px ;
+  margin-bottom: -40px;
+  border-radius: 70px 70px 0px 0px ;
   background-color:$bckcolor;
   position:relative;
   top:-45px;
-  
+
   
 }
 .titleMenu{
@@ -338,7 +340,45 @@ ul {
   &__para{
     font-family:Shrikhand;
     font-weight: bolder;
+    margin: 0;
+    padding-top: 45px;
+    padding-bottom: 15px;
+    
     
   }
 
+}
+.presentation{
+  margin: 0;
+  padding: 5px 0px 5px 10px ;
+}
+.border{
+  margin: 0;
+  padding: 3px 335px 3px 0px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  &__line{
+    border: 2px solid $tertiaire;
+    margin: 0;
+    
+
+  }
+}
+.content{
+  margin-bottom: 20px;
+  background-color:white;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 35px 10px 15px;
+  @include btn-shadow;
+  @include radiusBtn;
+  &__text{
+    line-height: 1.5;
+    margin: 0;
+
+  }
+
+}
+.price{
+  padding-top: 10px;
 }
