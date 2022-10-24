@@ -170,10 +170,21 @@ body > * {
   font-size: 12px;
 }
 
-.fa-heart {
-  padding: 10px 20px 0px;
+i.fa-regular.fa-heart {
+  font-size: 30px;
+  padding-top: 10px;
 }
-.fa-heart:hover {
+
+i.fa-solid.fa-heart {
+  position: relative;
+  right: 36px;
+  font-size: 30px;
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  transition: 800ms;
+}
+i.fa-solid.fa-heart:hover {
   color: #9356DC;
 }
 
