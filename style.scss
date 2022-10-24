@@ -228,14 +228,25 @@ body>* {
 
 }
 
-.fa-heart {
-  padding: 10px 20px 0px;
 
-  &:hover {
-    color: $primary;
-  }
+i.fa-regular.fa-heart {
+  font-size: 30px;
+  padding-top: 10px;
 }
 
+i.fa-solid.fa-heart {
+  position: relative;
+  right: 36px;
+  font-size: 30px;
+  background-clip: text;
+  color: transparent;
+  transition: 800ms;
+  
+  &:hover{
+      color:$primary;
+  }
+  }
+ 
 .titleCard {
   line-height: 1.5;
   display: flex;
