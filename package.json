@@ -1,0 +1,20 @@
+{
+  "name": "ohmyfood_sylveste_nora_11102022-1",
+  "version": "1.0.0",
+  "description": "projet 3",
+  "main": "index.js",
+  "scripts": {
+        "sass":"sass  assets/style.scss assets/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AEZ1989/ohmyfood_sylveste_nora_11102022.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AEZ1989/ohmyfood_sylveste_nora_11102022/issues"
+  },
+  "homepage": "https://github.com/AEZ1989/ohmyfood_sylveste_nora_11102022#readme"
+}

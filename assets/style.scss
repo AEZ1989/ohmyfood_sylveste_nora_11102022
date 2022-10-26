@@ -1,3 +1,10 @@
+/*@import "./main.scss";
+@import "./index.scss";*/
+
+
+
+
+
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 $primary: #9356DC;
@@ -6,7 +13,7 @@ $tertiaire: #99E2D0;
 $bckcolor: #F6F6F6;
 $btncolors: #f6f6f6d4;
 $bckgfooter: #0000;
-$selectorcolor: linear-gradient(to bottom,$secondary,$primarygit );
+$selectorcolor: linear-gradient(to bottom,$secondary,$primary);
 
 @mixin radiusBtn {
   border-radius: 20px 20px 20px 20px;
@@ -384,3 +391,19 @@ i.fa-thin.fa-heart {
 .price{
   padding-top: 10px;
 }
+
+
+/*
+body{
+	animation: identifier 3s 1 forwards;
+}
+@keyframes identifier {
+	0%{  z-index:1000;
+		background:purple;
+	}
+	100%{
+          z-index:0;
+		background:green;
+	}
+}
+*/
