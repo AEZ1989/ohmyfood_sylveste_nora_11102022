@@ -1,89 +1,40 @@
-/*@import "./main.scss";
-@import "./index.scss";*/
+@import "./main.scss";
+@import "./utils/variables";
+@import "./themes/animations";
 
-
-
-
+/*@import "./index.scss";*/
 
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-$primary: #9356DC;
-$secondary: #FF79DA;
-$tertiaire: #99E2D0;
-$bckcolor: #F6F6F6;
-$btncolors: #f6f6f6d4;
-$bckgfooter: #0000;
-$selectorcolor: linear-gradient(to bottom,$secondary,$primary);
 
-@mixin radiusBtn {
-  border-radius: 20px 20px 20px 20px;
-}
 
-@mixin btn-shadow {
-  box-shadow: 3px 3px 3px 3px #eeeeeef7;
-}
 
-@mixin radiusCard {
-  border-radius: 20px 20px 0px 0px;
-}
+
 
 body {
   font-family: "Roboto", sans-serif;
 }
 
 body>* {
-  padding: 10px 10px;
+  padding: 0px 10px;
 
 }
 
-.header {
 
+.bloc__text .section .text .blocBtn .section__card .logoHeader .footer{
   padding: 0px;
-
-
-  &__logo {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 15px;
-    padding-top: 15px;
-
-
-
-    &Img {
-      width: 30%;
-    }
-  }
-
-  &__localisation {
-    padding: 15px 0px 15px 91px;
-    display: flex;
-    justify-content: center;
-    background-color: #EAEAEA;
-    border-top: 3px solid lightgray;
-
-
-
-    input {
-      border: none;
-      background: #EAEAEA;
-    }
-
-  }
 }
-
-.bloc__text {
-  padding: 0;
-}
+ 
 
 .text {
 
   background-color: $bckcolor;
-  padding: 0;
+
 
 
   &__bolder {
     margin: 0;
-    padding: 20px 91px;
+     padding: 20px 91px;
     font-size: 20px;
     font-weight: bolder;
     text-align: center;
@@ -103,12 +54,12 @@ body>* {
   margin: 0 auto;
   width: 200px;
 
-  padding: 20px 0px ;
+  padding: 20px 0px;
 
   &__text {
+    margin: 0;
     @include btn-shadow;
     text-align: center;
-    margin: 0;
     background: $selectorcolor;
     padding: 17px 0px 17px;
     font-size: 14px;
@@ -119,80 +70,129 @@ body>* {
 }
 
 .blocBtn {
-  padding: 0;
-}
-
-.bloc__title {
-  margin: 0;
-  font-size: 18px;
-  font-weight: bolder;
-  padding-top: 35px;
-  padding-left: 20px;
-}
-
-.position {
-  margin: 0;
-  background: $primary;
-  position: relative;
-  left: -8px;
-  top: 73px;
-  border-radius: 20px;
-  width: 25px;
-  height: 25px;
-
-
-  &__number {
-    position: absolute;
-    left: 9px;
-    top: 7px;
-    color: white;
-    font-size: 12px;
+  @media screen and (min-width:560px) {
+    padding: 0px 100px 0px;
   }
 
-  &__logo {
-    position: relative;
-    left: 30px;
-    top: 53px;
-    color: darkgray;
+ 
+
+  &__title {
+    margin: 0;
+    @media (min-width:560px) {
+      text-align: center;
+      font-size: 26px;
+
+    }
+
+    font-size: 18px;
+    font-weight: bolder;
+    padding-top: 35px;
+    padding-left: 20px;
   }
 }
 
 .btn {
   margin: 0;
+  &:hover &__font{
+   color:$primary;
+    
+
+  }
+
+ 
   padding-left: 20px;
   padding-right: 20px;
 
 
-  &__text {
-    @include btn-shadow;
-    @include radiusBtn;
-    background-color: $btncolors;
-    text-align: center;
-    font-size: 16px;
-    font-weight: bolder;
-    margin: 0;
-    padding: 35px 45px 25px;
 
-   
-    &:hover {
-      background-color: #f6dff8;
-      box-shadow: 8px 8px 8px 8px #eeeeeef7;
-    }
+  &__position {
+    margin: 0;
+    background: $selectorcolor;
+    position: relative;
+    left: -8px;
+    top: 73px;
+    border-radius: 20px;
+    width: 27px;
+    height: 27px;
+  }
+
+  &__number {
+    @include number;
+    left: 9px;
+    top: 8px;
 
   }
+
+
+
+  &__logo {
+    position: relative;
+    left: 30px;
+    top: 53px;
+    color: rgb(146, 144, 144);
+  }
+
 }
+
+.btn__font {
+  color: #bab8b8;
+  position: relative;
+  top: 54px;
+  left: 2rem
+}
+
+.btn__text {
+
+  @include btn-shadow;
+  @include radiusBtn;
+  background-color: $btncolors;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bolder;
+  padding: 35px 45px 25px;
+  transition: background-color 300ms;
+  margin: 0;
+
+  &:hover {
+   
+     
+    background-color: lighten($color: #f9f6f6, $amount: 0);
+    box-shadow: 4px 4px 4px 4px #eeeeeef7;
+  }
+
+}
+
+
+
 
 .section {
   margin-top: 60px;
   background-color: $bckcolor ;
-  padding: 0;
+  
 
   &__card {
+    @media screen and (min-width:960px) {
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+   
+      padding-bottom: 80px;
+    }
+
+    @media screen and (min-width:560px) {
+      padding: 0px 120px 80px;
+    }
+
     padding: 0px 20px 50px;
   }
 }
 
 .restaurant {
+  @media screen and (min-width:560px) {
+    text-align: center;
+    font-size: 26px;
+  }
+
   margin: 0;
   padding-top: 30px;
   padding-left: 10px;
@@ -200,16 +200,20 @@ body>* {
   font-weight: bolder;
 
   &__card {
+    @media screen and (min-width:960px) {
+      width: 40%;
+    }
+
     @include btn-shadow;
     @include radiusBtn;
-    background-color: white;
+    background-color:$backgroundwhite;
     position: relative;
     height: 242px;
     border: 2px solid white;
     margin-top: 25px;
 
   }
- 
+
   &__img {
     @include radiusCard;
     height: 180px;
@@ -229,7 +233,7 @@ body>* {
     background-color: $tertiaire;
     margin: 0;
     font-size: 12px;
-    padding: 5px 5px 5px 5px ;
+    padding: 5px 5px 5px 5px;
 
 
   }
@@ -238,24 +242,34 @@ body>* {
 
 
 i.fa-regular.fa-heart {
+
   font-size: 30px;
   padding-top: 10px;
+  position: relative;
+}
+
+.heart {
+  position: absolute;
+  right: -1px;
 }
 
 i.fa-solid.fa-heart {
   position: relative;
   right: 31px;
-  top: -2px;
-  font-size: 25px;
+  font-size: 28px;
+  background-image: $selectorcolor;
   background-clip: text;
+  -webkit-background-clip: text;
   color: transparent;
-  transition: 800ms;
-  
-  &:hover{
-      color:$primary;
+  transition: 2000ms;
+  opacity: 0;
+
+  &:hover {
+
+    opacity: 1;
   }
-  }
- 
+}
+
 .titleCard {
   line-height: 1.5;
   display: flex;
@@ -270,54 +284,72 @@ i.fa-solid.fa-heart {
 }
 
 .footer {
-  padding: 0;
+
   background-color: rgb(48 48 54);
 
   &__title {
+    @media screen and (min-width:560px) {
+      text-align: center;
+    }
+
     font-family: Shrikhand;
     font-size: 20px;
-    color: white;
+    color: $text-white;
     padding-left: 20px;
     padding-top: 15px;
     margin: 0;
   }
 }
+
 i.fa-solid.fa-utensils {
-  padding-right:10px;
+  padding-right: 10px;
 }
+
 i.fa-solid.fa-handshake-angle {
   padding-right: 5px;
 }
+
 ul {
+  @media screen and (min-width:560px) {
+    text-align: center;
+  }
 
   line-height: 1.5;
-  color: white;
+  color: $text-white;
   list-style: none;
   padding-left: 20px;
   padding-bottom: 20px;
 }
 
-.contact{
-  color: white;
-  margin:0
+.contact {
+  color: $text-white;
+  margin: 0
 }
 
 
-/*PAGE 1 */
-.fa-arrow-left {
+
+/*pageMnu*/
+
+ .fa-arrow-left {
+  @media screen and (min-width:560px){
+    padding-top: 15px;;
+  }
   padding-left: 15px;
 }
 
 .logoHeader {
-  padding: 0;
+
 
   &__img1 {
+    @media screen and (min-width:560px){
+      justify-content: center;
+    }
     display: flex;
     padding: 5px 10px 5px;
   }
 
   &__img {
-    width: 30%;
+    width: 120px;
     padding-left: 100px;
 
   }
@@ -329,81 +361,177 @@ ul {
   width: 100%;
   height: 190px;
 }
+
 i.fa-thin.fa-heart {
   padding: 55px 11px 0px 0px;
 }
-.main{
-  margin-bottom: -40px;
-  border-radius: 50px 50px 0px 0px ;
-  background-color:$bckcolor;
-  position:relative;
-  top:-45px;
 
-  
+.heartMenu {
+  position: relative;
+  top: 29px;
 }
-.titleMenu{
+
+.heartmenu_solid {
+  position: relative;
+  top: -27px;
+  left: 32px;
+
+}
+
+.main {
+  margin-bottom: -40px;
+  border-radius: 50px 50px 0px 0px;
+  background-color: $bckcolor;
+  position: relative;
+  top: -45px;
+
+
+}
+
+.titleMenu {
   margin: 0;
-  display:flex;
-  justify-content:space-around;
+  display: flex;
+  justify-content: space-around;
   align-items: end;
- 
-  &__para{
-    font-family:Shrikhand;
+
+  &__para {
+    font-family: Shrikhand;
     font-weight: bolder;
     font-size: 25px;
     margin: 0;
     padding-top: 35px;
-;
     
-    
-  }
 
+
+  }
 }
-.presentation{
+
+.presentation {
+  @media screen and (min-width:560px){
+    text-align: center;
+  }
   margin: 0;
-  padding: 20px 0px 5px 10px ;
+  padding: 20px 0px 5px 10px;
 }
-.border{
+.border {
+  @media screen and (min-width:560px){
+    padding: 3px 132px 15px 138px;
+  }
   margin: 0;
-  padding: 3px 310px 15px 10px;
-  &__line{
+  padding: 3px 290px 15px 10px;
+  &__line {
     border: 2px solid $tertiaire;
     margin: 0;
-    
+}
+}
+.entre {
+  @media screen and (min-width:560px){
+    padding-right: 130px; 
+    padding-left: 130px;
+  }
+  animation: nora 6s forwards;
+  padding: 5px;
+}
 
+.plats {
+  @media screen and (min-width:560px){
+    padding-right: 130px; 
+    padding-left: 130px;
+  }
+  animation: nora 10s forwards
+}
+
+.dessert {
+  animation: nora 14s forwards;
+  @media screen and (min-width:560px){
+    padding-right: 130px; 
+    padding-left: 130px;
   }
 }
-.content{
-  margin-bottom: 20px;
-  background-color:white;
+
+
+
+
+.content {
+ 
   display: flex;
   justify-content: space-between;
-  padding: 10px 10px 10px 10px;
+  white-space: nowrap;
+  margin-bottom: 20px;
+  padding-left: 4px;
+  background-color:$backgroundwhite;
+  height: 4rem;
   @include btn-shadow;
   @include radiusBtn;
-  &__text{
-    line-height: 1.5;
-    margin: 0;
 
+  &__text {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin: 0;
+}
+ &:hover {
+ .valid {
+      width: 4rem;
+    
+    }
+    i.fa-sharp.fa-solid.fa-check {
+      animation:  checkValid 1s forwards;
+     }
+}
+  &__bloc {
+    line-height: 1.5;
+    padding-left: 5px;
+      padding-right: 5px;
+      text-overflow: ellipsis;
+      overflow: hidden;
   }
 
 }
-.price{
-  padding-top: 10px;
+
+
+h4{
+  text-overflow: ellipsis;
+  margin: 0;
+   padding-top: 8px;
+
+}
+ 
+
+.litleBloc{
+  display: flex;
+  margin: 0;
+
+&__price {
+  margin: 0;
+  padding-top: 35px;
+  padding-right: 10px;
+
+}
+}
+.font__v {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:$backgroundwhite;
+  border-radius: 20px;
+  transition: all,1s;
+ overflow: hidden;
 }
 
 
-/*
-body{
-	animation: identifier 3s 1 forwards;
+.valid{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+  border-radius: 0px 20px 20px 0px;
+  transition: all,2s;
+  background-color: $tertiaire;
+  width: 0;
+
 }
-@keyframes identifier {
-	0%{  z-index:1000;
-		background:purple;
-	}
-	100%{
-          z-index:0;
-		background:green;
-	}
+i.fa-sharp.fa-solid.fa-check{
+  color: $tertiaire;
+
 }
-*/

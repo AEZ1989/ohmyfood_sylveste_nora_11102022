@@ -1112,6 +1112,30 @@ a {
   font-size: 1em;
 }
 
+.header {
+  padding: 0px;
+}
+.header__logo {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+.header__logoImg {
+  width: 30%;
+}
+.header__localisation {
+  padding: 15px 0px 15px 91px;
+  display: flex;
+  justify-content: center;
+  background-color: #EAEAEA;
+  border-top: 3px solid lightgray;
+}
+.header__localisation input {
+  border: none;
+  background: #EAEAEA;
+}
+
 /**/
 .header {
   padding: 1em;
