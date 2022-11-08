@@ -65,6 +65,10 @@ body>* {
     font-size: 14px;
     color: white;
     border-radius: 25px;
+    opacity: 1;
+      &:hover{
+         opacity: 0.9;
+      }
 
   }
 }
@@ -239,7 +243,12 @@ body>* {
   }
 
 }
-
+i.heartSolid.fa-solid.fa-heart {
+  position: relative;
+  top: -4px;
+  right: 33px;
+  font-size: 33px;
+}
 
 i.fa-regular.fa-heart {
 
@@ -255,8 +264,8 @@ i.fa-regular.fa-heart {
 
 i.fa-solid.fa-heart {
   position: relative;
-  right: 31px;
-  font-size: 28px;
+  right: 34px;
+  font-size: 32px;
   background-image: $selectorcolor;
   background-clip: text;
   -webkit-background-clip: text;
@@ -329,29 +338,34 @@ ul {
 
 
 /*pageMnu*/
-
+i.fa-sharp.fa-solid.fa-arrow-left {
+  padding-right: 30px;
+}
  .fa-arrow-left {
+
   @media screen and (min-width:560px){
-    padding-top: 15px;;
+    display: none;
   }
-  padding-left: 15px;
+
 }
 
 .logoHeader {
-
-
+        
   &__img1 {
-    @media screen and (min-width:560px){
-      justify-content: center;
-    }
     display: flex;
-    padding: 5px 10px 5px;
+    justify-content: center;
+  
+
+    @media screen and (min-width:560px){
+      
+    }
+   
+    padding: 15px;
   }
 
   &__img {
     width: 120px;
-    padding-left: 100px;
-
+   
   }
 }
 
@@ -369,6 +383,7 @@ i.fa-thin.fa-heart {
 .heartMenu {
   position: relative;
   top: 29px;
+  left: 10px;
 }
 
 .heartmenu_solid {
@@ -389,6 +404,7 @@ i.fa-thin.fa-heart {
 }
 
 .titleMenu {
+  @media screen and (min-width:560px){ justify-content: center;}
   margin: 0;
   display: flex;
   justify-content: space-around;
@@ -409,25 +425,33 @@ i.fa-thin.fa-heart {
 .presentation {
   @media screen and (min-width:560px){
     text-align: center;
+    border-bottom: 3px solid $tertiaire;
+    margin-bottom: 15px;
   }
   margin: 0;
   padding: 20px 0px 5px 10px;
+
 }
 .border {
+  padding-left: 10px;
+  padding-bottom: 10px;
   @media screen and (min-width:560px){
-    padding: 3px 132px 15px 138px;
+    display: none;
   }
   margin: 0;
-  padding: 3px 290px 15px 10px;
+
   &__line {
+  
+    width: 38px;
     border: 2px solid $tertiaire;
     margin: 0;
+    margin-bottom: 3PX;
 }
 }
 .entre {
   @media screen and (min-width:560px){
-    padding-right: 130px; 
-    padding-left: 130px;
+    padding: 0px 130px  ;
+   
   }
   animation: nora 6s forwards;
   padding: 5px;
@@ -435,8 +459,7 @@ i.fa-thin.fa-heart {
 
 .plats {
   @media screen and (min-width:560px){
-    padding-right: 130px; 
-    padding-left: 130px;
+    padding: 0px 130px  ;
   }
   animation: nora 10s forwards
 }
@@ -444,19 +467,19 @@ i.fa-thin.fa-heart {
 .dessert {
   animation: nora 14s forwards;
   @media screen and (min-width:560px){
-    padding-right: 130px; 
-    padding-left: 130px;
+    padding:0px 130px  ;
   }
 }
 
 
-
+a {
+  overflow: hidden;
+}
 
 .content {
- 
+  overflow: hidden;
   display: flex;
   justify-content: space-between;
-  white-space: nowrap;
   margin-bottom: 20px;
   padding-left: 4px;
   background-color:$backgroundwhite;
@@ -465,11 +488,14 @@ i.fa-thin.fa-heart {
   @include radiusBtn;
 
   &__text {
-    text-overflow: ellipsis;
+    white-space: nowrap;
     overflow: hidden;
+    text-overflow: ellipsis;
     margin: 0;
 }
  &:hover {
+  background-color: lighten($color: #ffff, $amount: 0);
+  
  .valid {
       width: 4rem;
     
@@ -479,17 +505,20 @@ i.fa-thin.fa-heart {
      }
 }
   &__bloc {
+    text-overflow: ellipsis;
+    overflow: hidden;
     line-height: 1.5;
     padding-left: 5px;
       padding-right: 5px;
-      text-overflow: ellipsis;
-      overflow: hidden;
+     
   }
 
 }
 
 
 h4{
+  white-space:nowrap;
+  overflow: hidden;
   text-overflow: ellipsis;
   margin: 0;
    padding-top: 8px;
@@ -498,6 +527,7 @@ h4{
  
 
 .litleBloc{
+  overflow: hidden;
   display: flex;
   margin: 0;
 

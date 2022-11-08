@@ -540,6 +540,10 @@ body > * {
   font-size: 14px;
   color: white;
   border-radius: 25px;
+  opacity: 1;
+}
+.selector__text:hover {
+  opacity: 0.9;
 }
 
 @media screen and (min-width: 560px) {
@@ -683,6 +687,13 @@ body > * {
   padding: 5px 5px 5px 5px;
 }
 
+i.heartSolid.fa-solid.fa-heart {
+  position: relative;
+  top: -4px;
+  right: 33px;
+  font-size: 33px;
+}
+
 i.fa-regular.fa-heart {
   font-size: 30px;
   padding-top: 10px;
@@ -696,8 +707,8 @@ i.fa-regular.fa-heart {
 
 i.fa-solid.fa-heart {
   position: relative;
-  right: 31px;
-  font-size: 28px;
+  right: 34px;
+  font-size: 32px;
   background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
   background-clip: text;
   -webkit-background-clip: text;
@@ -765,27 +776,23 @@ ul {
 }
 
 /*pageMnu*/
-.fa-arrow-left {
-  padding-left: 15px;
+i.fa-sharp.fa-solid.fa-arrow-left {
+  padding-right: 30px;
 }
+
 @media screen and (min-width: 560px) {
   .fa-arrow-left {
-    padding-top: 15px;
+    display: none;
   }
 }
 
 .logoHeader__img1 {
   display: flex;
-  padding: 5px 10px 5px;
-}
-@media screen and (min-width: 560px) {
-  .logoHeader__img1 {
-    justify-content: center;
-  }
+  justify-content: center;
+  padding: 15px;
 }
 .logoHeader__img {
   width: 120px;
-  padding-left: 100px;
 }
 
 .imgMenu {
@@ -801,6 +808,7 @@ i.fa-thin.fa-heart {
 .heartMenu {
   position: relative;
   top: 29px;
+  left: 10px;
 }
 
 .heartmenu_solid {
@@ -823,6 +831,11 @@ i.fa-thin.fa-heart {
   justify-content: space-around;
   align-items: end;
 }
+@media screen and (min-width: 560px) {
+  .titleMenu {
+    justify-content: center;
+  }
+}
 .titleMenu__para {
   font-family: Shrikhand;
   font-weight: bolder;
@@ -838,21 +851,26 @@ i.fa-thin.fa-heart {
 @media screen and (min-width: 560px) {
   .presentation {
     text-align: center;
+    border-bottom: 3px solid #99E2D0;
+    margin-bottom: 15px;
   }
 }
 
 .border {
+  padding-left: 10px;
+  padding-bottom: 10px;
   margin: 0;
-  padding: 3px 290px 15px 10px;
 }
 @media screen and (min-width: 560px) {
   .border {
-    padding: 3px 132px 15px 138px;
+    display: none;
   }
 }
 .border__line {
+  width: 38px;
   border: 2px solid #99E2D0;
   margin: 0;
+  margin-bottom: 3PX;
 }
 
 .entre {
@@ -861,8 +879,7 @@ i.fa-thin.fa-heart {
 }
 @media screen and (min-width: 560px) {
   .entre {
-    padding-right: 130px;
-    padding-left: 130px;
+    padding: 0px 130px;
   }
 }
 
@@ -871,8 +888,7 @@ i.fa-thin.fa-heart {
 }
 @media screen and (min-width: 560px) {
   .plats {
-    padding-right: 130px;
-    padding-left: 130px;
+    padding: 0px 130px;
   }
 }
 
@@ -881,15 +897,18 @@ i.fa-thin.fa-heart {
 }
 @media screen and (min-width: 560px) {
   .dessert {
-    padding-right: 130px;
-    padding-left: 130px;
+    padding: 0px 130px;
   }
 }
 
+a {
+  overflow: hidden;
+}
+
 .content {
+  overflow: hidden;
   display: flex;
   justify-content: space-between;
-  white-space: nowrap;
   margin-bottom: 20px;
   padding-left: 4px;
   background-color: white;
@@ -898,9 +917,13 @@ i.fa-thin.fa-heart {
   border-radius: 20px 20px 20px 20px;
 }
 .content__text {
-  text-overflow: ellipsis;
+  white-space: nowrap;
   overflow: hidden;
+  text-overflow: ellipsis;
   margin: 0;
+}
+.content:hover {
+  background-color: white;
 }
 .content:hover .valid {
   width: 4rem;
@@ -909,20 +932,23 @@ i.fa-thin.fa-heart {
   animation: checkValid 1s forwards;
 }
 .content__bloc {
+  text-overflow: ellipsis;
+  overflow: hidden;
   line-height: 1.5;
   padding-left: 5px;
   padding-right: 5px;
-  text-overflow: ellipsis;
-  overflow: hidden;
 }
 
 h4 {
+  white-space: nowrap;
+  overflow: hidden;
   text-overflow: ellipsis;
   margin: 0;
   padding-top: 8px;
 }
 
 .litleBloc {
+  overflow: hidden;
   display: flex;
   margin: 0;
 }
