@@ -1,3 +1,50 @@
 
 
 
+
+.footer {
+
+    background-color: rgb(48 48 54);
+  
+    &__title {
+      @media screen and (min-width:560px) {
+        text-align: center;
+      }
+  
+      font-family: Shrikhand;
+      font-size: 20px;
+      color: $text-white;
+      padding-left: 20px;
+      padding-top: 15px;
+      margin: 0;
+    }
+  }
+  
+  ul {
+    @media screen and (min-width:560px) {
+      text-align: center;
+    }
+  
+    margin: 0;
+    line-height: 1.5;
+    color: $text-white;
+    list-style: none;
+    padding-left: 20px;
+    padding-bottom: 20px;
+  
+    i.fa-solid.fa-utensils {
+      padding-right: 10px;
+    }
+  
+    i.fa-solid.fa-handshake-angle {
+      padding-right: 5px;
+    }
+  
+    .contact {
+      color: $text-white;
+      margin: 0
+    }
+  
+  
+  }
+  

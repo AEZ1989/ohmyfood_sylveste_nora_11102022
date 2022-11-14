@@ -1,0 +1,120 @@
+.selector {
+ 
+  margin: 0 auto;
+  width: 200px;
+  padding: 20px 0px;
+
+  &__text {
+    margin: 0;
+    @include btn-shadow;
+    text-align: center;
+    background: $selectorcolor;
+    padding: 17px 0px 17px;
+    font-size: 14px;
+    color: white;
+    border-radius: 25px;
+    transition: all, 1s;
+    opacity: 1;
+
+    &:hover {
+      opacity: 0.9;
+
+    }
+
+  }
+}
+
+.blocBtn {
+  @media screen and (min-width:560px) {
+    padding: 0px 100px 0px;
+  }
+
+
+
+  &__title {
+    margin: 0;
+
+    @media (min-width:560px) {
+      text-align: center;
+      font-size: 26px;
+
+    }
+
+    font-size: 18px;
+    font-weight: bolder;
+    padding-top: 35px;
+    padding-left: 20px;
+  }
+}
+
+.btn {
+  margin: 0;
+
+  &:hover &__font {
+    color: $primary;
+
+
+  }
+
+
+  padding-left: 20px;
+  padding-right: 20px;
+
+
+
+  &__position {
+    margin: 0;
+    background: $selectorcolor;
+    position: relative;
+    left: -8px;
+    top: 73px;
+    border-radius: 20px;
+    width: 27px;
+    height: 27px;
+  }
+
+  &__number {
+    @include number;
+    left: 9px;
+    top: 8px;
+
+  }
+
+
+
+  &__logo {
+    position: relative;
+    left: 30px;
+    top: 53px;
+    color: rgb(146, 144, 144);
+  }
+
+}
+
+.btn__font {
+  color: #bab8b8;
+  position: relative;
+  top: 54px;
+  left: 2rem
+}
+
+.btn__text {
+
+  @include btn-shadow;
+  @include radiusBtn;
+  background-color: $btncolors;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bolder;
+  padding: 35px 45px 25px;
+  transition: background-color 300ms;
+  margin: 0;
+
+  &:hover {
+
+
+    background-color: lighten($color: #f9f6f6, $amount: 0);
+    box-shadow: 4px 4px 4px 4px #eeeeeef7;
+  }
+
+}

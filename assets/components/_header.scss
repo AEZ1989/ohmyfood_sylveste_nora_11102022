@@ -1,7 +1,14 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
 
+body>* {
+  padding: 0px 10px;
+
+}
 .header {
 
-  padding: 0px;
+ padding: 0px;
 
 
   &__logo {
@@ -33,3 +40,34 @@
 
   }
 }
+
+
+.sectionText{
+  padding:0;
+  .text {
+
+    background-color: $bckcolor;
+  
+  
+  
+    &__bolder {
+      margin: 0;
+      padding: 20px 91px;
+      font-size: 20px;
+      font-weight: bolder;
+      text-align: center;
+  
+    }
+  
+    &__normal {
+      margin: 0;
+      text-align: center;
+      line-height: 1;
+      color: #6f6a6a;
+    }
+  
+  }
+  
+}
+
+

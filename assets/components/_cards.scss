@@ -1,0 +1,87 @@
+
+ .restaurant,.nouveau__green,.titleCard__comment{margin:0}
+.section {
+  margin-top: 60px;
+  background-color: $bckcolor ;
+
+
+  &__card {
+    @media screen and (min-width:960px) {
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+
+      padding-bottom: 80px;
+    }
+
+    @media screen and (min-width:560px) {
+      padding: 0px 120px 80px;
+    }
+
+    padding: 0px 20px 50px;
+  }
+}
+
+
+.restaurant {
+  @media screen and (min-width:560px) {
+    text-align: center;
+    font-size: 26px;
+  }
+
+  
+  padding-top: 30px;
+  padding-left: 10px;
+  font-size: 18px;
+  font-weight: bolder;
+
+  &__card {
+    @media screen and (min-width:960px) {
+      width: 40%;
+    }
+
+    @include btn-shadow;
+    @include radiusBtn;
+    background-color:$backgroundwhite;
+    position: relative;
+    height: 242px;
+    border: 2px solid white;
+    margin-top: 25px;
+
+  }
+
+  &__img {
+    @include radiusCard;
+    height: 180px;
+    width: 100%;
+
+    object-fit: cover;
+
+  }
+}
+
+.nouveau {
+  position: absolute;
+  top: 20px;
+  left: 80%;
+
+  &__green {
+    background-color: $tertiaire;
+    font-size: 12px;
+    padding: 5px 5px 5px 5px;
+
+
+  }
+
+}
+.titleCard {
+  line-height: 1.5;
+  display: flex;
+  justify-content: space-between;
+
+  &__comment {
+    font-size: 14px;
+    padding-top: 5px;
+    padding-left: 10px;
+  }
+}

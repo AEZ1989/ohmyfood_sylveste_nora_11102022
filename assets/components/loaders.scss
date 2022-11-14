@@ -44,23 +44,4 @@
   
 
   
-  @keyframes spinLeft {
-    from {transform:rotate(0deg);}
-    to {transform:rotate(720deg);}
-  }
-  
-  @keyframes spinRight {
-    from {transform:rotate(360deg);}
-    to {transform:rotate(0deg);}
-  }
-  @keyframes disapear {
-    0% {
-      z-index: 9000;
-    }
-  
-    100% {
-        opacity: 0;
-      z-index: -1;
-    }
-  }
-  
+ 

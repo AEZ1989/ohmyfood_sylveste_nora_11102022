@@ -1,0 +1,263 @@
+/*pageMnu*/
+i.fa-sharp.fa-solid.fa-arrow-left {
+    position: absolute;
+    left: 3rem;
+
+}
+
+
+.logoHeader {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+    &__img1 {
+        display: flex;
+        padding: 15px;
+    }
+
+    &__img {
+        width: 120px;
+
+    }
+}
+
+.imgMenu {
+
+    object-fit: cover;
+    width: 100%;
+    height: 190px;
+}
+
+
+
+.heartMenu {
+    position: relative;
+    top: 29px;
+    left: 10px;
+
+    i.heartSolid.fa-solid.fa-heart {
+        position: relative;
+        top: -4px;
+        right: 33px;
+        font-size: 33px;
+        background-image: $selectorcolor;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        transition: 2000ms;
+        opacity: 0;
+
+        &:hover {
+
+            opacity: 1;
+        }
+    }
+
+
+    .heartmenu_solid {
+        position: relative;
+        top: -27px;
+        left: 32px;
+
+    }
+}
+
+
+
+.titleMenu {
+    @media screen and (min-width:560px) {
+        justify-content: center;
+    }
+
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+
+    &__para {
+        font-family: Shrikhand;
+        font-weight: bolder;
+        font-size: 25px;
+        margin: 0;
+        padding-top: 35px;
+
+
+
+    }
+}
+
+.presentation {
+    @media screen and (min-width:560px) {
+        text-align: center;
+        border-bottom: 3px solid $tertiaire;
+        margin-bottom: 15px;
+    }
+
+    margin: 0;
+    padding: 20px 0px 5px 10px;
+
+}
+
+.border>* {
+    margin: 0;
+}
+
+.border {
+    padding-left: 10px;
+    padding-bottom: 10px;
+
+    @media screen and (min-width:560px) {
+        display: none;
+    }
+
+    &__line {
+        width: 38px;
+        border: 2px solid $tertiaire;
+        margin-bottom: 3PX;
+    }
+}
+
+.entre {
+    @media screen and (min-width:560px) {
+        padding: 0px 130px;
+    }
+
+    animation: nora 6s forwards;
+    padding: 5px;
+}
+
+.plats {
+    @media screen and (min-width:560px) {
+        padding: 0px 130px;
+    }
+
+    animation: nora 10s forwards
+}
+
+.dessert {
+    animation: nora 14s forwards;
+
+    @media screen and (min-width:560px) {
+        padding: 0px 130px;
+    }
+}
+
+
+
+
+
+.main {
+    margin-bottom: -40px;
+    border-radius: 50px 50px 0px 0px;
+    background-color: $bckcolor;
+    position: relative;
+    top: -45px;
+
+
+}
+
+.main>article>a {
+
+    color: black;
+    overflow: hidden;
+    text-decoration: none;
+
+    .content {
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        padding-left: 4px;
+        background-color: $backgroundwhite;
+        height: 4rem;
+        @include btn-shadow;
+        @include radiusBtn;
+
+        &__text {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin: 0;
+        }
+
+        &:hover {
+            background-color: lighten($color: #ffff, $amount: 0);
+
+            .valid {
+                width: 4rem;
+
+            }
+
+            i.fa-sharp.fa-solid.fa-check {
+                animation: checkValid 1s forwards;
+            }
+        }
+
+        &__bloc {
+            text-overflow: ellipsis;
+            overflow: hidden;
+            line-height: 1.5;
+            padding-left: 5px;
+            padding-right: 5px;
+
+        }
+
+    }
+
+    h4 {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin: 0;
+        padding-top: 8px;
+
+    }
+
+
+
+}
+
+
+.litleBloc>*{margin: 0;}
+
+.litleBloc {
+    overflow: hidden;
+    display: flex;
+  &__price {
+        padding-top: 35px;
+        padding-right: 10px;
+
+    }
+}
+
+
+.valid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 20px 20px 0px;
+    transition: all, 2s;
+    background-color: $tertiaire;
+    width: 0;
+
+    .font__v {
+        width: 24px;
+        height: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $backgroundwhite;
+        border-radius: 20px;
+        transition: all, 1s;
+        overflow: hidden;
+    }
+
+    i.fa-sharp.fa-solid.fa-check {
+        color: $tertiaire;
+
+    }
+
+
+}

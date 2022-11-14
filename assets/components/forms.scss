@@ -1,0 +1,34 @@
+
+
+i.fa-regular.fa-heart {
+
+    font-size: 30px;
+    padding-top: 10px;
+    position: relative;
+    opacity: 1;                                       
+  }
+  
+  .heart {
+    position: absolute;
+    right: -1px;
+    i.fa-solid.fa-heart {
+      position: relative;
+      right: 34px;
+      font-size: 32px;
+      background-image: $selectorcolor;
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      transition: 2000ms;
+      opacity: 0;
+    
+      &:hover {
+    
+        opacity: 1;
+      }
+    }
+    
+    
+  
+  }
+  
