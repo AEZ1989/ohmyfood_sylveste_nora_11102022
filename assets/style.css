@@ -1,7 +1,4 @@
 /**/
-/*@import "./utils/functions";*/
-/*@import "./utils/extensions";*/
-/*@import "./themes/template";*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&family=Shrikhand&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.css");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
@@ -373,16 +370,6 @@ ul {
 }
 
 /**/
-/*h1,h2,h3,h4,h5,h6{margin:0;}
-ul,ol,menu{list-style-type: none;padding:0;}
-figure{margin:0;}
-img{width:100%;object-fit: cover;display: block;}
-a{text-decoration:none;color:inherit;}*/
-a {
-  text-decoration: none;
-}
-
-/**/
 .loader {
   width: 100vw;
   height: 100vh;
@@ -605,7 +592,7 @@ body > * {
 }
 .selector__text {
   margin: 0;
-  box-shadow: 3px 3px 3px 3px rgba(238, 238, 238, 0.968627451);
+  box-shadow: 3px 3px 3px 3px rgb(215, 210, 210);
   text-align: center;
   background: linear-gradient(to bottom, #FF79DA, #9356DC);
   padding: 17px 0px 17px;
@@ -719,11 +706,6 @@ i.fa-regular.fa-heart {
   opacity: 1;
 }
 
-/*@import "./layouts/headers";
-@import "./layouts/navs";
-@import "./layouts/mains";
-@import "./layouts/footers";*/
-/*pageMnu*/
 i.fa-sharp.fa-solid.fa-arrow-left {
   position: absolute;
   left: 3rem;
@@ -762,7 +744,7 @@ i.fa-sharp.fa-solid.fa-arrow-left {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  transition: 2000ms;
+  transition: 1000ms;
   opacity: 0;
 }
 .heartMenu i.heartSolid.fa-solid.fa-heart:hover {
@@ -994,14 +976,227 @@ i.fa-sharp.fa-solid.fa-arrow-left {
     z-index: -1;
   }
 }
-/**/
-/*h1,h2,h3,h4,h5,h6{margin:0;}
-ul,ol,menu{list-style-type: none;padding:0;}
-figure{margin:0;}
-img{width:100%;object-fit: cover;display: block;}
-a{text-decoration:none;color:inherit;}*/
 a {
   text-decoration: none;
+}
+
+i.fa-sharp.fa-solid.fa-arrow-left {
+  position: absolute;
+  left: 3rem;
+}
+
+.logoHeader {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.logoHeader__img1 {
+  display: flex;
+  padding: 15px;
+}
+.logoHeader__img {
+  width: 120px;
+}
+
+.imgMenu {
+  object-fit: cover;
+  width: 100%;
+  height: 190px;
+}
+
+.heartMenu {
+  position: relative;
+  top: 29px;
+  left: 10px;
+}
+.heartMenu i.heartSolid.fa-solid.fa-heart {
+  position: relative;
+  top: -4px;
+  right: 33px;
+  font-size: 33px;
+  background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: 1000ms;
+  opacity: 0;
+}
+.heartMenu i.heartSolid.fa-solid.fa-heart:hover {
+  opacity: 1;
+}
+.heartMenu .heartmenu_solid {
+  position: relative;
+  top: -27px;
+  left: 32px;
+}
+
+.titleMenu {
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: end;
+}
+@media screen and (min-width: 560px) {
+  .titleMenu {
+    justify-content: center;
+  }
+}
+.titleMenu__para {
+  font-family: Shrikhand;
+  font-weight: bolder;
+  font-size: 25px;
+  margin: 0;
+  padding-top: 35px;
+}
+
+.presentation {
+  margin: 0;
+  padding: 20px 0px 5px 10px;
+}
+@media screen and (min-width: 560px) {
+  .presentation {
+    text-align: center;
+    border-bottom: 3px solid #99E2D0;
+    margin-bottom: 15px;
+  }
+}
+
+.border > * {
+  margin: 0;
+}
+
+.border {
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+@media screen and (min-width: 560px) {
+  .border {
+    display: none;
+  }
+}
+.border__line {
+  width: 38px;
+  border: 2px solid #99E2D0;
+  margin-bottom: 3PX;
+}
+
+.entre {
+  animation: nora 6s forwards;
+  padding: 5px;
+}
+@media screen and (min-width: 560px) {
+  .entre {
+    padding: 0px 130px;
+  }
+}
+
+.plats {
+  animation: nora 10s forwards;
+}
+@media screen and (min-width: 560px) {
+  .plats {
+    padding: 0px 130px;
+  }
+}
+
+.dessert {
+  animation: nora 14s forwards;
+}
+@media screen and (min-width: 560px) {
+  .dessert {
+    padding: 0px 130px;
+  }
+}
+
+.main {
+  margin-bottom: -40px;
+  border-radius: 50px 50px 0px 0px;
+  background-color: #F6F6F6;
+  position: relative;
+  top: -45px;
+}
+
+.main > article > a {
+  color: black;
+  overflow: hidden;
+  text-decoration: none;
+}
+.main > article > a .content {
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding-left: 4px;
+  background-color: white;
+  height: 4rem;
+  box-shadow: 3px 3px 3px 3px rgba(238, 238, 238, 0.968627451);
+  border-radius: 20px 20px 20px 20px;
+}
+.main > article > a .content__text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0;
+}
+.main > article > a .content:hover {
+  background-color: white;
+}
+.main > article > a .content:hover .valid {
+  width: 4rem;
+}
+.main > article > a .content:hover i.fa-sharp.fa-solid.fa-check {
+  animation: checkValid 1s forwards;
+}
+.main > article > a .content__bloc {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  line-height: 1.5;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.main > article > a h4 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0;
+  padding-top: 8px;
+}
+
+.litleBloc > * {
+  margin: 0;
+}
+
+.litleBloc {
+  overflow: hidden;
+  display: flex;
+}
+.litleBloc__price {
+  padding-top: 35px;
+  padding-right: 10px;
+}
+
+.valid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px 20px 20px 0px;
+  transition: all, 2s;
+  background-color: #99E2D0;
+  width: 0;
+}
+.valid .font__v {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 20px;
+  transition: all, 1s;
+  overflow: hidden;
+}
+.valid i.fa-sharp.fa-solid.fa-check {
+  color: #99E2D0;
 }
 
 /*@import "./index.scss";*/

@@ -1,16 +1,16 @@
 
 @import "./utils/variables";
-/*@import "./utils/functions";*/
-@import "./utils/mixins";
-/*@import "./utils/extensions";*/
 
-/*@import "./themes/template";*/
+@import "./utils/mixins";
+
+
+
 @import "./themes/animations";
 
 @import "./base/normalize";
-@import "./base/base";
+
 @import "./base/typography";
-// @import "./vendors/";
+
 
 @import "./components/loaders";
 @import "./components/footers";
@@ -18,13 +18,4 @@
 @import "./components/cards";
 @import "./components/buttons";
 @import "./components/forms";
-
-
-/*@import "./layouts/headers";
-@import "./layouts/navs";
-@import "./layouts/mains";
-@import "./layouts/footers";*/
-
-//@import "./pages/all";
-//@import "./pages/home";
-@import "./pages/menus";
+@import "./pages/menu";

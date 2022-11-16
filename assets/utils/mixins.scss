@@ -11,6 +11,10 @@
   @mixin btn-shadow {
     box-shadow: 3px 3px 3px 3px #eeeeeef7;
   }
+  @mixin shadow {
+     box-shadow: 3px 3px 3px 3px rgb(215, 210, 210);
+  }
+
   
   @mixin radiusCard {
     border-radius: 20px 20px 0px 0px;

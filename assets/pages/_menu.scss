@@ -1,8 +1,7 @@
-/*pageMnu*/
+//pageMnu
 i.fa-sharp.fa-solid.fa-arrow-left {
     position: absolute;
     left: 3rem;
-
 }
 
 
@@ -46,7 +45,7 @@ i.fa-sharp.fa-solid.fa-arrow-left {
         background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
-        transition: 2000ms;
+        transition: 1000ms;
         opacity: 0;
 
         &:hover {

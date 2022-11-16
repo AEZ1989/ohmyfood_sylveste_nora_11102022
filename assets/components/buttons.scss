@@ -1,12 +1,12 @@
 .selector {
- 
+
   margin: 0 auto;
   width: 200px;
   padding: 20px 0px;
 
   &__text {
     margin: 0;
-    @include btn-shadow;
+    @include shadow;
     text-align: center;
     background: $selectorcolor;
     padding: 17px 0px 17px;
@@ -15,6 +15,9 @@
     border-radius: 25px;
     transition: all, 1s;
     opacity: 1;
+
+    
+
 
     &:hover {
       opacity: 0.9;
