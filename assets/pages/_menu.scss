@@ -1,7 +1,8 @@
 //pageMnu
 i.fa-sharp.fa-solid.fa-arrow-left {
     position: absolute;
-    left: 3rem;
+    left: 2rem;
+    top: 18px;
 }
 
 
@@ -63,28 +64,32 @@ i.fa-sharp.fa-solid.fa-arrow-left {
     }
 }
 
-
-
-.titleMenu {
+.titleBlock {
     @media screen and (min-width:560px) {
         justify-content: center;
     }
+    display: flex;
+    justify-content: space-between;
+    padding-right: 25px;
+    padding-left: 10px;
+
+
+.titleMenu {
+ 
 
     margin: 0;
-    display: flex;
-    justify-content: space-around;
-    align-items: end;
-
+   
     &__para {
         font-family: Shrikhand;
         font-weight: bolder;
         font-size: 25px;
         margin: 0;
-        padding-top: 35px;
+        padding-top: 45px;
 
 
 
     }
+}
 }
 
 .presentation {

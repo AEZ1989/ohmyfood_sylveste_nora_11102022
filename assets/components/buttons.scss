@@ -21,6 +21,7 @@
 
     &:hover {
       opacity: 0.9;
+      box-shadow: 3px 3px 3px 3px rgb(215, 210, 210);
 
     }
 
@@ -79,7 +80,7 @@
   &__number {
     @include number;
     left: 9px;
-    top: 8px;
+    top: 6px;
 
   }
 

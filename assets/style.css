@@ -1,6 +1,4 @@
 /**/
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&family=Shrikhand&display=swap");
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.css");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @keyframes nora {
@@ -369,7 +367,14 @@ ul {
   list-style: none;
 }
 
-/**/
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+body > * {
+  padding: 0px 10px;
+}
+
 .loader {
   width: 100vw;
   height: 100vh;
@@ -453,14 +458,6 @@ ul .contact {
   margin: 0;
 }
 
-body {
-  font-family: "Roboto", sans-serif;
-}
-
-body > * {
-  padding: 0px 10px;
-}
-
 .header {
   padding: 0px;
 }
@@ -532,7 +529,7 @@ body > * {
 
 .restaurant {
   padding-top: 30px;
-  padding-left: 10px;
+  padding-left: 25px;
   font-size: 18px;
   font-weight: bolder;
 }
@@ -566,7 +563,7 @@ body > * {
 .nouveau {
   position: absolute;
   top: 20px;
-  left: 80%;
+  left: 77%;
 }
 .nouveau__green {
   background-color: #99E2D0;
@@ -592,7 +589,7 @@ body > * {
 }
 .selector__text {
   margin: 0;
-  box-shadow: 3px 3px 3px 3px rgb(215, 210, 210);
+  box-shadow: 2px 2px 2px 2px rgb(215, 210, 210);
   text-align: center;
   background: linear-gradient(to bottom, #FF79DA, #9356DC);
   padding: 17px 0px 17px;
@@ -604,6 +601,7 @@ body > * {
 }
 .selector__text:hover {
   opacity: 0.9;
+  box-shadow: 3px 3px 3px 3px rgb(215, 210, 210);
 }
 
 @media screen and (min-width: 560px) {
@@ -648,7 +646,7 @@ body > * {
   font-size: 12px;
   color: white;
   left: 9px;
-  top: 8px;
+  top: 6px;
 }
 .btn__logo {
   position: relative;
@@ -708,7 +706,8 @@ i.fa-regular.fa-heart {
 
 i.fa-sharp.fa-solid.fa-arrow-left {
   position: absolute;
-  left: 3rem;
+  left: 2rem;
+  top: 18px;
 }
 
 .logoHeader {
@@ -756,23 +755,26 @@ i.fa-sharp.fa-solid.fa-arrow-left {
   left: 32px;
 }
 
-.titleMenu {
-  margin: 0;
+.titleBlock {
   display: flex;
-  justify-content: space-around;
-  align-items: end;
+  justify-content: space-between;
+  padding-right: 25px;
+  padding-left: 10px;
 }
 @media screen and (min-width: 560px) {
-  .titleMenu {
+  .titleBlock {
     justify-content: center;
   }
 }
-.titleMenu__para {
+.titleBlock .titleMenu {
+  margin: 0;
+}
+.titleBlock .titleMenu__para {
   font-family: Shrikhand;
   font-weight: bolder;
   font-size: 25px;
   margin: 0;
-  padding-top: 35px;
+  padding-top: 45px;
 }
 
 .presentation {
@@ -982,7 +984,8 @@ a {
 
 i.fa-sharp.fa-solid.fa-arrow-left {
   position: absolute;
-  left: 3rem;
+  left: 2rem;
+  top: 18px;
 }
 
 .logoHeader {
@@ -1030,23 +1033,26 @@ i.fa-sharp.fa-solid.fa-arrow-left {
   left: 32px;
 }
 
-.titleMenu {
-  margin: 0;
+.titleBlock {
   display: flex;
-  justify-content: space-around;
-  align-items: end;
+  justify-content: space-between;
+  padding-right: 25px;
+  padding-left: 10px;
 }
 @media screen and (min-width: 560px) {
-  .titleMenu {
+  .titleBlock {
     justify-content: center;
   }
 }
-.titleMenu__para {
+.titleBlock .titleMenu {
+  margin: 0;
+}
+.titleBlock .titleMenu__para {
   font-family: Shrikhand;
   font-weight: bolder;
   font-size: 25px;
   margin: 0;
-  padding-top: 35px;
+  padding-top: 45px;
 }
 
 .presentation {
@@ -1199,6 +1205,12 @@ i.fa-sharp.fa-solid.fa-arrow-left {
   color: #99E2D0;
 }
 
-/*@import "./index.scss";*/
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+body > * {
+  padding: 0px 10px;
+} /*@import "./index.scss";*/
 
 /*# sourceMappingURL=style.css.map */
