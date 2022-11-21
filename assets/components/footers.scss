@@ -30,7 +30,7 @@
     color: $text-white;
     list-style: none;
     padding-left: 20px;
-    padding-bottom: 20px;
+   
   
     i.fa-solid.fa-utensils {
       padding-right: 10px;
@@ -39,12 +39,15 @@
     i.fa-solid.fa-handshake-angle {
       padding-right: 5px;
     }
-  
-    .contact {
-      color: $text-white;
-      margin: 0
+  }
+  p.contact {
+    @media screen and (min-width:560px) {
+      text-align: center;
     }
   
-  
-  }
+    color:$text-white;
+    margin: 0;
+    padding-left:20px;
+    padding-bottom: 20px;
+}
   
