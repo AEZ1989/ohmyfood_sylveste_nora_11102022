@@ -750,7 +750,7 @@ i.fa-sharp.fa-solid.fa-arrow-left {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  transition: 1000ms;
+  transition: all 2000ms ease-in-out;
   opacity: 0;
 }
 .heartMenu i.heartSolid.fa-solid.fa-heart:hover {
@@ -1028,7 +1028,7 @@ i.fa-sharp.fa-solid.fa-arrow-left {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  transition: 1000ms;
+  transition: all 2000ms ease-in-out;
   opacity: 0;
 }
 .heartMenu i.heartSolid.fa-solid.fa-heart:hover {
@@ -1218,6 +1218,34 @@ body {
 
 body > * {
   padding: 0px 10px;
-} /*@import "./index.scss";*/
+}
+
+i.fa-regular.fa-heart {
+  font-size: 30px;
+  padding-top: 10px;
+  position: relative;
+  opacity: 1;
+}
+
+.heart {
+  position: absolute;
+  right: -1px;
+}
+.heart i.fa-solid.fa-heart {
+  position: relative;
+  right: 34px;
+  font-size: 32px;
+  background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: 2000ms;
+  opacity: 0;
+}
+.heart i.fa-solid.fa-heart:hover {
+  opacity: 1;
+}
+
+/*@import "./index.scss";*/
 
 /*# sourceMappingURL=style.css.map */

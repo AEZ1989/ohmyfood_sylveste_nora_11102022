@@ -46,11 +46,12 @@ i.fa-sharp.fa-solid.fa-arrow-left {
         background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
-        transition: 1000ms;
+        transition:all 2000ms ease-in-out;
         opacity: 0;
+      
 
         &:hover {
-
+       
             opacity: 1;
         }
     }
