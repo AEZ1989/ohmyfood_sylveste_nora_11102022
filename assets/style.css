@@ -12,7 +12,7 @@
 }
 @keyframes checkValid {
   0% {
-    transform: rotate(0, 5turn);
+    transform: rotate(0turn);
   }
   100% {
     transform: rotate(1turn);
@@ -20,7 +20,7 @@
 }
 @keyframes checkValid {
   0% {
-    transform: rotate(0, 5turn);
+    transform: rotate(0turn);
   }
   100% {
     transform: rotate(1turn);
@@ -946,7 +946,7 @@ i.fa-sharp.fa-solid.fa-arrow-left {
 }
 @keyframes checkValid {
   0% {
-    transform: rotate(0, 5turn);
+    transform: rotate(0turn);
   }
   100% {
     transform: rotate(1turn);
@@ -954,7 +954,7 @@ i.fa-sharp.fa-solid.fa-arrow-left {
 }
 @keyframes checkValid {
   0% {
-    transform: rotate(0, 5turn);
+    transform: rotate(0turn);
   }
   100% {
     transform: rotate(1turn);
